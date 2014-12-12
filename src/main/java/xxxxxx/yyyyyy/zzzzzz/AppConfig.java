@@ -1,23 +1,23 @@
 package xxxxxx.yyyyyy.zzzzzz;
 
 import net.sf.log4jdbc.sql.jdbcapi.DataSourceSpy;
-import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import javax.sql.DataSource;
 
 @Configuration
 public class AppConfig {
-    @Autowired
+    @Inject
     DataSourceProperties dataSourceProperties;
 
-    @Configuration
-    public static class JerseyConfig extends ResourceConfig {
+    @Named
+    static class JerseyConfig extends ResourceConfig {
         public JerseyConfig() {
             this.packages("xxxxxx.yyyyyy.zzzzzz");
         }
