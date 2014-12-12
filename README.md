@@ -28,6 +28,8 @@ with CommandPrompt (Windows)
 
 ### Example
 
+#### Create a project
+
 ```
 $ mvn archetype:generate -B\
 >  -DarchetypeGroupId=am.ik.archetype\
@@ -99,8 +101,29 @@ $ find . | sort | sed '1d;s,[^/]*/,|    ,g;s/..//;s/[^ ]*$/|-- &/'
    |    |    |    |    |-- .gitkeep
 
 
-$ mvn test -f hajiboot/pom.xml
-... Starts end to end test ;)
+
+$ cd hajiboot
+```
+
+#### Run prepared E2E tests
+
+``` bash
+$ mvn test
+```
+
+#### Run the app quickly
+
+``` bash
+$ mvn spring-boot:run
+```
+
+Access http://localhost:8080/calc?left=100&right=200
+
+#### Build executable jar
+
+``` bash
+$ mvn package
+$ java -jar target/*.jar
 ```
 
 ## License
