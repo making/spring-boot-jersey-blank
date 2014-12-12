@@ -19,7 +19,7 @@ import static org.hamcrest.CoreMatchers.is;
 @WebAppConfiguration
 @IntegrationTest({"server.port:0",
         "spring.datasource.url:jdbc:h2:mem:projectName;DB_CLOSE_ON_EXIT=FALSE"})
-public class HelloResourceTest {
+public class HelloEndpointTest {
     @Value("${local.server.port}")
     int port;
 
