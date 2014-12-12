@@ -32,12 +32,12 @@ with CommandPrompt (Windows)
 
 ```
 $ mvn archetype:generate -B\
->  -DarchetypeGroupId=am.ik.archetype\
->  -DarchetypeArtifactId=spring-boot-jersey-blank-archetype\
->  -DarchetypeVersion=1.0.0\
->  -DgroupId=com.example\
->  -DartifactId=hajiboot\
->  -Dversion=1.0.0-SNAPSHOT
+  -DarchetypeGroupId=am.ik.archetype\
+  -DarchetypeArtifactId=spring-boot-jersey-blank-archetype\
+  -DarchetypeVersion=1.0.0\
+  -DgroupId=com.example\
+  -DartifactId=hajiboot\
+  -Dversion=1.0.0-SNAPSHOT
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
