@@ -5,7 +5,7 @@
 
     <groupId>am.ik.archetype</groupId>
     <artifactId>spring-boot-jersey-blank</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
 
     <name>Spring Boot Jersey Blank Project (from https://github.com/making/spring-boot-jersey-blank)</name>
