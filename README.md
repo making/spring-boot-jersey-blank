@@ -25,6 +25,15 @@ with CommandPrompt (Windows)
      -DarchetypeGroupId=am.ik.archetype^
      -DarchetypeArtifactId=spring-boot-jersey-blank-archetype^
      -DarchetypeVersion=1.0.2
+	 
+If using Eclipse IDE (or other IDE), install Lombok:
+First, download dependencies into local Mavan repo to get Lombok jar:
+	
+	mvn dependency:resolve
+	
+Now run the Lombok installer from jar (one-off procedure):
+	
+    java -jar ~/.m2/repository/org/projectlombok/lombok/1.16.8/lombok-1.16.8.jar
 
 ### Example
 
